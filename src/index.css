@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Londrina+Solid:wght@100;300;400&family=Telex&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.desc{
+    font-family: 'Telex', sans-serif;
+}
+
+.subtitle{
+    font-family: 'Londrina Solid', cursive;
+}
+
+.title{
+    font-family: 'Bigshot One', cursive;
+}
+
+@layer base{
+    body{
+        @apply w-full min-h-screen bg-fuchsia-200/50 overflow-x-hidden
+    }
+}

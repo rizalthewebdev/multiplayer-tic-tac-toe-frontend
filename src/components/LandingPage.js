@@ -23,7 +23,7 @@ const image = {
 
 const svgVariants = {
    hidden: { opacity: 0 },
-   visible: { opacity: 1, transition: { delay: 1, duration: 1 } },
+   visible: { opacity: 1, transition: { delay: 0.7, duration: 1 } },
 }
 
 const lineDividerVariants = {

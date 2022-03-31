@@ -24,18 +24,18 @@ const container ={
       x: '-100vw',
       transition: {
          ease: 'easeInOut',
-         duration: 1
+         duration: 0.5
       }
    }
 }
 
 const SignUp = () => {
-   const [name, setName] = useState("");
+   const [fullName, setFullName] = useState("");
    const [username, setUsername] = useState("");
    const [password, setPassword] = useState("");
 
    const addData = () => {
-      console.log(name, username, password);
+      console.log(fullName, username, password);
    };
 
    return (
@@ -53,8 +53,8 @@ const SignUp = () => {
                   name="name"
                   type="text"
                   label="Name"
-                  value={name}
-                  setValue={setName}
+                  value={fullName}
+                  setValue={setFullName}
                />
                <Input
                   name="username"
@@ -79,7 +79,7 @@ const SignUp = () => {
             <p className="desc text-gray-600">
                Already have account ?{" "}
                <Link
-                  className="text-blue-600 hover:text-blue-700 hover:underline"
+                  className="link"
                   to="/sign-in"
                >
                   Sign In

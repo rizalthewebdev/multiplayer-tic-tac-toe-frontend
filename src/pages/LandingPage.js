@@ -4,6 +4,7 @@ import { HiArrowRight } from "react-icons/hi";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
+// Variants
 const container ={
    hidden: {
       opacity: 0,
@@ -18,7 +19,7 @@ const container ={
       x: '-100vw',
       transition: {
          ease: 'easeInOut',
-         duration: 1
+         duration: 0.5
       }
    }
 }

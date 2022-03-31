@@ -24,10 +24,11 @@ const container ={
       x: '-100vw',
       transition: {
          ease: 'easeInOut',
-         duration: 1
+         duration: 0.5
       }
    }
 }
+
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -70,7 +71,7 @@ const Login = () => {
             <p className="desc text-gray-600">
                Don't have account ?{" "}
                <Link
-                  className="text-blue-600 hover:text-blue-700 hover:underline"
+                  className="link"
                   to="/sign-up"
                >
                   Sign Up

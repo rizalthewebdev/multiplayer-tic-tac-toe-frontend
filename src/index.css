@@ -21,3 +21,18 @@
         @apply w-full min-h-screen bg-fuchsia-200/50 overflow-x-hidden
     }
 }
+
+@layer components {
+    .shown-password{
+        @apply absolute right-0 top-0 bottom-0 text-fuchsia-400 text-xl w-10 h-10 hover:text-fuchsia-700 flex items-center justify-center
+    }
+    .title-section{
+        @apply text-center text-4xl md:text-5xl text-fuchsia-800/90
+    }
+    .input {
+        @apply px-1.5 bg-transparent w-full h-10 ring-1 ring-gray-400 rounded-sm focus:outline-none text-black placeholder-transparent focus:ring-2 focus:ring-fuchsia-700
+    }
+    .label-input {
+        @apply absolute z-10 left-2 -top-3 desc text-fuchsia-800 bg-white px-1 text-sm transition-all duration-200 peer-placeholder-shown:-z-10 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-1.5 peer-placeholder-shown:left-1 peer-focus:text-fuchsia-800 peer-focus:-top-3 peer-focus:text-sm peer-focus:z-10
+    }
+}
